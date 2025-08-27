@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Popup from './Popup';
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -6,6 +8,7 @@ const ContactSection = () => {
     phone: '',
     message: '',
   });
+  const [showPopup, setShowPopup] = useState(false);
 
   const isFormFilled =
     formData.name.trim() &&
@@ -24,7 +27,7 @@ const ContactSection = () => {
     e.preventDefault();
     if (isFormFilled) {
       console.log('Form submitted:', formData);
-      alert('Thank you for your message! We will get back to you soon.');
+      setShowPopup(true);
       handleClear();
     }
   };
@@ -136,9 +139,13 @@ const ContactSection = () => {
             </button>
           </div>
         </form>
+        <Popup
+          show={showPopup}
+          onClose={() => setShowPopup(false)}
+          message="Thank you! We will get in touch with you as soon as possible."
+        />
       </div>
     </section>
   );
 };
 export default ContactSection;
-             
