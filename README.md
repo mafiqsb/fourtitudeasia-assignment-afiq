@@ -1,3 +1,8 @@
+# Fourtitude Asia Assignment
+
+**Node.js version used:** 18.x.x  
+_Ensure you are using Node.js v18 or compatible for best results._
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
