@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('services');
+  const [ignoreScroll, setIgnoreScroll] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
+      if (ignoreScroll) return;
       const sections = ['services', 'ui-ux', 'connect'];
       let current = 'services';
       for (let i = 0; i < sections.length; i++) {
         const id = sections[i];
         const el = document.getElementById(id);
         if (el) {
-          const offset = el.offsetTop - 120; 
+          const offset = el.offsetTop - 120;
           const nextEl = document.getElementById(sections[i + 1]);
           const nextOffset = nextEl ? nextEl.offsetTop - 120 : Infinity;
           if (window.scrollY >= offset && window.scrollY < nextOffset) {
@@ -35,12 +37,18 @@ const Header = () => {
     return () => {
       document.removeEventListener('scroll', handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, ignoreScroll]);
   const scrollToSection = (id) => {
+    setIgnoreScroll(true);
     setActiveSection(id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        setIgnoreScroll(false);
+      }, 500);
+    } else {
+      setIgnoreScroll(false);
     }
   };
   return (

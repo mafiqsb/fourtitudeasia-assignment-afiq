@@ -5,41 +5,36 @@ const ServiceCard = () => {
       category: 'Customized Development',
       title: 'Tailor-made solutions for your business',
       description:
-        "Can't find a ready-made solution that fits? We can custom build mobile & web applications to suit your business needs.",
-      image:
-        'https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png',
+        "Can’t find a ready-made solution that fits? We can custom build mobile & web applications to suit your business needs.",
+      image: '/card_1.png',
     },
     {
       category: 'Integration & API Management',
       title: 'Achieve digital transformation via an API management ecosystem',
       description:
         "Venture into the mobile space with our mobility services. From mobile-first websites to mobile apps, we're ready to help you develop a mobile solution that works.",
-      image:
-        'https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png',
+      image: '/card_2.png',
     },
     {
       category: 'Cloud-native Development',
       title: 'Enhance your business in a cloud-native environment',
       description:
         'Improve business agility, velocity and flexibility through the cloud – we are here to guide you through the entire process.',
-      image:
-        'https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png',
+      image: '/card_3.png',
     },
     {
       category: 'Mobile Development',
       title: 'Become an anywhere business',
       description:
         "From mobile-first websites to mobile apps, we're ready to help you develop a mobile solution that works.",
-      image:
-        'https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png',
+      image: '/card_4.png',
     },
     {
       category: 'Application Modernization',
       title: 'Breathing new life into old technology',
       description:
         'Give legacy or aging systems a new lease on life. We can help you modernize them to better serve your business needs.',
-      image:
-        'https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png',
+      image: '/card_5.png',
     },
   ];
   return (
