@@ -246,7 +246,6 @@ nav ul li a.active::after {
   color: #999;
 }
 
-/* Add specific positioning for textarea labels */
 .textarea-container label {
   top: 15px;
   transform: translateY(0);
