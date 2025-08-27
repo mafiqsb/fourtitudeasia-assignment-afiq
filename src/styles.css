@@ -132,13 +132,14 @@ nav ul li a.active::after {
 .card {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2), 0 -4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 .card-content {
   padding: 20px;
@@ -228,11 +229,11 @@ nav ul li a.active::after {
 .input-container textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
   background: #fff;
   border: 1px solid #cccccc;
+  border-radius: 8px;
   color: #333;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -245,11 +246,13 @@ nav ul li a.active::after {
   transition: all 0.3s ease;
   color: #999;
 }
-.input-container input::placeholder,
-.input-container textarea::placeholder {
-  color: #999999;
-  opacity: 1;
+
+/* Add specific positioning for textarea labels */
+.textarea-container label {
+  top: 15px;
+  transform: translateY(0);
 }
+
 .input-container input:focus,
 .input-container textarea:focus {
   border-color: #4a6fdc;
