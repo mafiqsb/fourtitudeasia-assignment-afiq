@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="site-footer">
       <div className="container">
-        <p>© 2023 Fourtitude Asia. All rights reserved.</p>
+        <p>© 2025 Fourtitude Asia. All rights reserved.</p>
       </div>
     </footer>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;
