@@ -7,7 +7,6 @@ const Popup = ({ show, onClose, message }) => {
     if (show) {
       setVisible(true);
     } else {
-      // Delay hiding for fade out
       const timeout = setTimeout(() => setVisible(false), 300);
       return () => clearTimeout(timeout);
     }

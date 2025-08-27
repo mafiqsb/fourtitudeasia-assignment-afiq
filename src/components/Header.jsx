@@ -42,7 +42,6 @@ const Header = () => {
     };
   }, [scrolled, ignoreScroll]);
 
-  // Close sidebar on window resize if not mobile
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -116,7 +115,6 @@ const Header = () => {
             </button>
           </div>
         ) : (
-          // Desktop: logo and nav
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className="logo">
               <img

@@ -1,4 +1,3 @@
-/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -255,7 +254,7 @@ nav ul li a.active::after {
 
 .input-container input:focus,
 .input-container textarea:focus {
-  border-color: #4a6fdc;
+  border-color: #999999;
   outline: none;
   box-shadow: 0 0 0 2px rgba(74, 111, 220, 0.2);
 }
@@ -270,7 +269,7 @@ nav ul li a.active::after {
   font-size: 12px;
   background-color: #fff;
   padding: 0 5px;
-  color: #4a6fdc;
+  color: #999999;
 }
 .textarea-container textarea {
   min-height: 120px;
