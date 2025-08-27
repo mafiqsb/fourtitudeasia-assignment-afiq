@@ -238,8 +238,9 @@ nav ul li a.active::after {
 }
 .input-container label {
   position: absolute;
-  top: 15px;
+  top: 50%;
   left: 15px;
+  transform: translateY(-50%);
   pointer-events: none;
   transition: all 0.3s ease;
   color: #999;
@@ -262,6 +263,7 @@ nav ul li a.active::after {
 .input-container label.float {
   top: -10px;
   left: 10px;
+  transform: translateY(0);
   font-size: 12px;
   background-color: #fff;
   padding: 0 5px;
