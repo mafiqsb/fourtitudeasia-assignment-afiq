@@ -7,7 +7,6 @@ const ContactSection = () => {
     message: '',
   });
 
-  // Button is enabled only if all fields are filled
   const isFormFilled =
     formData.name.trim() &&
     formData.email.trim() &&
@@ -24,7 +23,6 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormFilled) {
-      // Form submission logic would go here
       console.log('Form submitted:', formData);
       alert('Thank you for your message! We will get back to you soon.');
       handleClear();
