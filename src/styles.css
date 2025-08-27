@@ -383,6 +383,59 @@ nav ul li a.active::after {
   color: #0f4ab2;
 }
 
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  transition: background 0.3s;
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  min-width: 280px;
+  max-width: 90vw;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  padding: 24px 24px 16px 24px;
+  z-index: 2100;
+  transition: opacity 0.4s, transform 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.popup-content {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 18px;
+  text-align: left;
+  flex: 1;
+}
+
+.popup-message {
+  font-size: 15px;
+}
+
+.popup-button {
+  background: #4a6fdc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(74, 111, 220, 0.08);
+  margin-top: 8px;
+  transition: background 0.2s;
+  align-self: flex-end;
+}
+
 @media (max-width: 600px) {
   .popup-container {
     left: 50% !important;
