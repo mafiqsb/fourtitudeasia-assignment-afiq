@@ -5,7 +5,7 @@ const ServiceCard = () => {
       category: 'Customized Development',
       title: 'Tailor-made solutions for your business',
       description:
-        "Can’t find a ready-made solution that fits? We can custom build mobile & web applications to suit your business needs.",
+        'Can’t find a ready-made solution that fits? We can custom build mobile & web applications to suit your business needs.',
       image: '/card_1.png',
     },
     {
@@ -40,6 +40,14 @@ const ServiceCard = () => {
   return (
     <section className="services" id="services">
       <div className="container">
+        <div style={{ textAlign: 'center' }}>
+          <h2>Development & Integration</h2>
+          <p className="section-description">
+            Our development and integration services cater to organisations
+            looking at digital transformation and Industry 4.0. Let's work
+            together to realize your business goals today.
+          </p>
+        </div>
         <div className="service-cards">
           {services.map((service, index) => (
             <div className="card" key={index}>

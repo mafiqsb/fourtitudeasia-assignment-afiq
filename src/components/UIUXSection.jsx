@@ -5,19 +5,20 @@ const UIUXSection = () => {
       category: "User Experience",
       title: "Intuitive digital experiences to elevate your business",
       description: "Through our UX design services we help you capture and retain the trust, business and loyalty of key customer groups.",
-      image: "https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png"
+      image: "/card_6.png"
     },
     {
       category: "User Interface",
       title: "Deliver memorable brand experiences using human-centred design",
       description: "We make innovation user-friendly with content and design best practices to translate your business goals into experiences that are meaningful to customers.",
-      image: "https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png"
+      image: "/card_7.png"
+
     },
     {
       category: "Cloud Marketing",
       title: "Leverage cloud applications for digital marketing efficacy",
       description: "Through our digital marketing solutions, we help create impactful digital campaigns, and experiences that are bound to captivate audiences.",
-      image: "https://uploadthingy.s3.us-west-1.amazonaws.com/8SVYvV3XoAXWobivpnnWBA/image.png"
+      image: "/card_8.png"
     }
   ];
   return (
